@@ -1,0 +1,217 @@
+
+
+body{
+   
+   
+    background-color: black;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+    font-family: 'Mulish';
+    
+}
+
+.about-section {
+   padding: 50px;
+   text-align: center;
+   background-color: #000000;
+   color: silver;
+   opacity: .85;
+ }
+
+header{
+    background-color: greenyellow;
+    padding: 15px;
+    box-shadow: 0 0 3px #000;
+    font-family: 'Mulish';
+
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    float: left;
+    padding: 0 10px;
+}
+
+header li {
+    display: inline;
+    padding-right: 40px;
+
+}
+
+header li a{
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+    transition: .3s ease;
+    font-size: 20px;
+}
+
+header li a:hover
+{
+    color: white;
+}
+
+header ul #registration a{
+    color: yellow;
+    background-color: green;
+    border-radius: 30px;
+    float: right;
+    position: relative;
+    top: -15px;
+    transition: .3s ease;
+    font-size: 20px;
+}
+
+header ul #contact a:hover
+    {
+        background-color: violet;
+    }
+
+ header li img{
+        width: 100px;
+        float: left;
+        margin-top: -27px;
+        
+    }
+
+    .active{
+        color: red;
+    }
+
+    .container
+    {
+      width: 100%;
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+      padding: 10px;
+      background-image: url('img/bgnd-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      text-align: justify;
+      font-size: large;
+    }
+
+    .container-p{
+      padding: 10px;
+      margin: 20px;
+    }
+
+    
+
+/*footer*/
+.footer{
+   background-color: greenyellow;
+   width: 100%;
+   position: absolute;
+   padding: 30px 20px;
+}
+
+.footer .footer-content{
+   padding: 10px;
+   display: flex;   
+   padding-left: 240px;
+}
+
+.footer .footer-content .footer-section{
+   padding: 0 100px;
+}
+
+.footer-section h1{
+   color: rgba(0, 0, 0, 0.952);
+   font-size: 25px;
+   margin: 4px;
+   font-family: 'Mulish';
+}
+
+.footer-section p{
+   color: skyblue;
+   font-size: 18px;
+   margin: 5px;
+}
+
+.footer-section a{
+   color: brown;
+   font-size: 18px;
+}
+
+
+
+.footer .footer-section .social-links a{
+   text-align: center;
+   width: 50px;
+   height: 50px;
+}
+
+.social-links a{
+   font-size: 20px;
+   margin: 5px;
+   padding: 5px;
+}
+ 
+   
+ /*gallery*/
+
+h1{
+   font-size: 35px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.gallery{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 10px;
+
+}
+
+.gallery img{
+   width: 300px;
+   height: 200px;
+   margin: 10px;
+   
+}
+
+/*video*/
+.video-container{
+
+   padding: 6%;
+   margin: 40px;
+   display: inline;
+}
+
+
+.f{
+   width: 400px;
+   height: 300px;
+   margin: 10px;
+   padding: 10px;
+}
+
+
+/*registration*/
+table, tr, td{
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px;
+   font-size: 20px;
+   border-radius: 10px;
+   text-align: center;
+
+}
+
+th{
+   font-size: 2rem;
+}
+table{
+   background-color: rgba(255, 250, 255, 0.7);
+}
+
+
+
+
