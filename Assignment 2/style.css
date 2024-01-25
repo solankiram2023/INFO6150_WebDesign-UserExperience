@@ -1,0 +1,383 @@
+*{
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(0, 85, 128);
+}
+
+header{
+    background-color: greenyellow;
+    width: 100%;
+    height: 100px;
+}
+
+header .header-name{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    display:block;
+    margin: 0 auto;
+    padding: 20px 0;  
+}
+
+    header nav ul{
+    margin:0 auto;
+    display: block;
+    width: fit-content;
+ }
+
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 16px;
+}
+
+header nav ul li a{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    /*font-weight: 700;*/
+    font-size: 12px;
+}
+
+nav a{
+    border-radius: 3px;
+    padding: 2px;
+}
+
+nav a.active, nav a:hover{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+}
+
+@media only screen and (min-width: 992px)
+{
+    header .header-name{
+        font-size: 40px;
+        color: black;
+        padding: 10px 0;  
+    }
+    
+    header nav ul li{
+        list-style: none;
+        padding: 0 16px;
+    }
+    
+    header nav ul li a{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        /*font-weight: 700;*/
+        font-size: 20px;
+    }
+
+    nav a{
+        padding: 10px;
+    }
+
+    
+    .contact-banner .row{
+        padding: 0 50px;
+        width: auto;
+        justify-items: center;
+        display: table;
+    }
+    
+    .contact-banner .row .column{
+        margin: 0;
+        padding: 30px;
+    }
+    
+    .contact-banner .column p{
+        width: auto;
+    }
+    
+    .contact-banner .column h2{
+        color:white;
+    }
+    
+    .contact-banner .column h2 a{
+        color:white;
+        font-size: 15px;
+    }
+
+    .contact-wrapper{
+        padding-left: 50px;
+    }
+
+    .contact input{
+        width: 300px;
+        height: 25px;   
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+    header .header-name{
+        font-size: 40px;
+        color: black;
+        padding: 10px;  
+    }
+
+    header nav ul li{
+        list-style: none;
+        padding: 0 16px;
+    }
+    
+    header nav ul li a{
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        /*font-weight: 700;*/
+        font-size: 25px;
+    }
+
+    nav a{
+        padding: 5px;
+    }
+
+    .contact-banner .row{
+        margin: 20px;
+        width: 100%;
+        color: white;
+       /*font-size: 15px;*/
+    }
+    
+    .contact-banner .row .column{
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .contact-banner .row .column p{
+        width: auto;
+        font-size: 25px;
+    }
+    
+    .table-degree{
+        padding: 10px;
+    }
+    
+    table tr td{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 10px;
+        font-size: 35px;
+        text-align: justify;
+        color: white;
+        border: 1px solid white;   
+    }
+}
+
+/* Index Page */
+
+.index-banner{
+    width: 100%;
+    height: 70vh;
+    background-image: url('image/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.vertical{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px #111;
+    line-height: 60px;
+}
+
+.index-banner h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px #111;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 35px;
+}
+
+.message audio{
+    padding: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contact-banner{
+    width: 100%;
+    position: relative;
+    display: table;
+    align-items:center;
+    text-align: justify;
+}
+
+.contact-banner .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.contact-banner .column{
+    display: table;
+    align-items: center;
+}
+
+.contact-banner .column p{
+    color:white;
+    font-size: 18px;
+}
+
+.contact-banner .column h2{
+    color:white;
+}
+
+.contact-banner .column h2 a{
+    color:white;
+    font-size: 18px;
+}
+
+.contact input{
+    width: 330px;
+    height: 25px;  
+    color: white; 
+}
+
+.contact textarea{
+    width: 330px;
+    height: 200px;
+    overflow: hidden;
+}
+
+input#submit{
+    width: 100px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.about-banner video{
+    width:100%;
+}
+
+.about-table h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.about-table1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.table-degree{
+    padding: 10px;
+    margin:10px;
+}
+
+table tr td{
+    margin-left: 0;
+    margin-right: 0;
+    padding:10px;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    border: 1px solid white;   
+}
+
+.table{
+    width: 100%;
+}
+
+.table td{
+    width:50%;
+}
+
+figure{
+    padding: 5px;
+    margin : auto;
+}
+
+figcaption{
+    color:white;
+    font-style: italic;
+    text-align: center;
+    padding: 2px;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    align-items: center;
+    gap: 10px;
+    padding: 21px;
+}
+
+.row{
+    position: relative;
+    cursor: pointer;
+}
+
+.row:hover img{
+    border: 3px solid orange;
+    opacity: 0.8;
+}
+
+/* Footer Page */
+
+footer{
+    width: 100%;
+    padding-top: 10px;
+    background-color: yellowgreen;
+    color: white;
+    overflow: hidden;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    color: black;
+}
+
+.footer-content .social-links{
+    width: fit-content;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: black;
+}
+
+.social-links a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;  
+    color: black
+}
+
+.footer-bottom{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    word-spacing: 2px;
+    color: black;
+}
