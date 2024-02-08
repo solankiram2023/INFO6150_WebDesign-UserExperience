@@ -1,0 +1,26 @@
+label {	
+  float: left;
+	width: 150px;}
+       
+#container{
+  width: 1000px;
+  margin: auto;
+  background-color: bisque;
+
+} 
+
+main{
+  padding: 50px;
+}
+
+.required{
+  color: red;
+}
+
+span{
+  font-style: bold;
+}
+
+.selectBox{
+  display: inline-block;
+}

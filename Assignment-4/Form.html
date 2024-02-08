@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<title>Assignment 4</title>
+  	<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  	<link rel="stylesheet" type="text/css" href="form.css">
+  	<script src="form.js"></script>
+ </head>
+ <body onload="checkSelection(), showData();">
+ <div id="container">
+	 
+	 <main>
+	 <h3>Tell Us About Your Likes and Dislikes!!</h3>
+		 <b>Note</b> : Fields marked with an asterisk (<span class="required">*</span>) are mandatory
+		 <br><br>
+		 <div style="display: flex;">
+		 <form method="post" action="#.html" onsubmit="return submitButton();" id="myForm">
+
+			<label>Title<span class="required">*</span>:</label>
+			<input type="radio" name="title" id="miss" value="miss" required="required"/> Miss
+			<input type="radio" name="title" id="mr" value="mr" required="required"/> Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" required="required"/> Mrs.
+			<br><br>
+
+			<label for="firstName">First Name<span class="required">*</span>:-</label>
+			<input type="text" name="firstName" id="firstName" style="width:250px" required="required" placeholder="First Name" onkeyup="validateInputs(this, 1, 'FName')"/>	
+			<br><br>
+			<div id="errorMsgFName" style="display:none;color:red"></div>
+			
+
+			<label for="lastName">Last Name<span class="required">*</span>:-</label>
+			<input type="text" name="lastName" id="lastName" style="width:250px" required="required" placeholder="Last Name" onkeyup ="validateInputs(this, 2, 'LName')"/>
+			<br><br>
+			<div id="errorMsgLName" style="display:none;color:red"></div>
+			
+
+			<label for="emailId">Email Id<span class="required">*</span>:-</label>
+			<input type="text" name="emailId" id="emailId" style="width:250px" required="required" placeholder="yourname@northeastern.edu" onkeyup="validateInputs(this, 3, 'EmailId')"/>
+			<br><br>
+			<div id="errorMsgEmailId" style="display:none;color:red"></div>
+			
+
+			<label for="phoneNumber">Phone Number<span class="required">*</span>:-</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" style="width:250px" required="required" placeholder="xxx-xxx-xxxx" onkeyup="validateInputs(this, 4, 'Phone')"/>
+			<br><br>
+			<div id="errorMsgPhone" style="display:none;color:red"></div>
+
+
+			<label for="addressStreet1">Address Street 1<span class="required">*</span>:-</label>
+			<input type="text" name="addressStreet1" id="addressStreet1" style="width:250px" required="required" placeholder="Address Street 1" onkeyup="validateInputs(this, 5, 'AddressStreet1')"/>
+			<br><br>
+			<div id="errorMsgAddressStreet1" style="display:none;color:red"></div>
+
+
+			<label for="addressStreet2">Address Street 2<span class="required"></span>:-</label>
+			<input type="text" name="addressStreet2" id="addressStreet2" style="width:250px" placeholder="Address Street 2"/> 
+			<br><br>
+			<div id="errorMsgAddressStreet2" style="display:none;color:red"></div>
+
+
+			<label for="city">City<span class="required">*</span>:-</label>
+			<input type="text" name="city" id="city" required="required" style="width:250px" placeholder="City"
+			 onkeyup="validateInputs(this, 6, 'City')"/>
+			<br><br>
+			<div id="errorMsgCity" style="display:none;color:red"></div>
+
+
+			<label for="state">State<span class="required">*</span>:-</label>
+			<input type="text" name="state" id="state" required="required" style="width:250px" placeholder="State"
+			 onkeyup="validateInputs(this, 7, 'State')"/>
+			<br><br>
+			<div id="errorMsgState" style="display:none;color:red"></div>
+
+			
+            <label for="zipcode">ZipCode<span class="required">*</span>:-</label>
+			<input type="text" name="zipcode" id="zipcode" required="required" style="width:250px" placeholder="xxxxx" 
+			 onkeyup="validateInputs(this, 8, 'ZipCode')"/>
+			<br><br>
+			<div id="errorMsgZipCode" style="display:none;color:red"></div>
+             
+             
+			<label for="comments">Comments<span class="required">*</span>:-</label>
+			<textarea name="text" id="comments" required="required" placeholder="Tell us about your Interests." style="width:250px" rows="5" cols="25" onkeyup="validateInputs(this, 9, 'Comments')"></textarea>
+			<br><br>
+			<div id="errorMsgComments" style="display:none;color:red"></div>
+
+			<div id="hobbies">
+				<label for="hobbies">Hobbies<span class="required">*</span>:-</label>
+				<select name="hobbies" id="hobbiesList" onchange="checkSelection()">
+					<option value="none">--Select--</option>
+					<option value="dancing">Dancing</option>
+					<option value="movies">Movies</option>
+					<option value="coding">Coding</option>
+					<option value="reading">Reading</option>
+					<option value="singing">Singing</option>
+					<option value="other">Other</option>
+				</select>
+				<br><br>
+				<div id="afterChange">
+					<input type='checkbox' name="list" value="hobbiesList" required="required" onclick="checkBox(this)" id="selectCheckBox" style="margin-left: 150px;"/><p id="onSelect" style="display: inline-block;"> On select</p>
+					<div id="afterCheckbox">
+						&nbsp;
+						<p class="selectBox"><span class="required">*</span></p>
+						<input type="text" name="hobbiesList" id="hobbiesListText" placeholder="mandatory" onkeyup="validateInputs(this, 10, 'Mandatory')"/>
+						<p id="errorMsgMandatory" style="display:none;color:red" class="selectBox">&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			
+
+			<input type="Submit" id="submitBtn" disabled=true>
+			<input type="Reset" id="resetBtn" onclick="resetButton()">
+			
+			<br><br>
+		</form>
+	</div>
+
+			<h3 style="display: inline-block;">Feedback Data</h3>
+            
+            <table class="myTable" id="myTable" border="1">
+                <tr>
+                    <th>Title </th>
+                    <th>First Name </th>
+                    <th>Last Name </th>
+                    <th>Email</th>
+                    <th>Phone Number </th>
+                    <th>Street Address 1 </th>
+                    <th>Street Address 2 </th>
+                    <th>City </th>
+                    <th>State </th>
+                    <th>Zip Code </th>
+                    <th>Comment </th>
+                    <th>Hobbies </th>
+                    <th>Hobbies Text </th>
+                </tr>
+
+
+            </table>
+
+			<!--<h3 style="display: inline-block;">Previously Submitted Form:</h3>
+			<table id="myTable" border="1">
+				<tr>
+					<td class="tableFirst">Title:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tableFirst">First Name:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tableFirst">Last Name:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tableFirst">Email-ID:</td>
+					<td></td>
+				</tr>
+					<tr>
+					<td class="tableFirst">Phone Number:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tableFirst">Address Street 1:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tableFirst">Address Street 2:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tableFirst">City:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tableFirst">State:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tableFirst">Zip Code:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tableFirst">Comments:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tableFirst">Hobbies:</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="tableFirst">Hobbies Text:</td>
+					<td></td>
+				</tr>
+			</table>-->
+		 
+	 </main>
+ </div>
+
+ </body>
+</html>
